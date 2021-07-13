@@ -1,0 +1,5 @@
+name: 'Stack Test'
+description: 'Execute stack tests on the current project'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
