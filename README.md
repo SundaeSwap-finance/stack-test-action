@@ -9,11 +9,11 @@ Cardano ecosystem have been pre-installed.
 on: [ push ]
 
 jobs:
-  hello_world_job:
+  test:
     runs-on: ubuntu-latest
     name: Stack Test
     steps:
       - name: execute stack tests
         id: test
-        uses: SundaeSwap-finance/stack-test-action@v1
+        uses: SundaeSwap-finance/stack-test-action@main
 ```
