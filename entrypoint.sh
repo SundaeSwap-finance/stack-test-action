@@ -6,4 +6,3 @@ set -eu
 (cd /github/home && tar -xzvf /stack-cache.tar.gz)
 
 stack test
-
