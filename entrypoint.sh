@@ -2,6 +2,8 @@
 
 set -eu
 
-chown -R "$(id -un):$(id -gn)" ~
+# populate stack cache
+(cd /github/home && tar -xzvf /stack-cache.tar.gz)
+
 stack test
 
