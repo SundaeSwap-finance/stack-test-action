@@ -3,6 +3,6 @@
 set -eu
 
 # populate stack cache
-(cd /github/home && tar -xzvf /stack-cache.tar.gz)
+(cd /root && tar cf - .stack | (cd /github/home && tar xvf -))
 
 stack test
